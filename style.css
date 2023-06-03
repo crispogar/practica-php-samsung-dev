@@ -1,0 +1,71 @@
+/*Le metemos algo de estilo para que quede mono.*/
+
+@import url('https://fonts.google.com/specimen/Roboto');
+
+body {
+    font-family: 'Roboto';
+    background-color: #cec09f75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #414348;
+  }
+
+h1 {
+    font-family: 'Roboto';
+    color: #414348;
+    font-weight: 450;
+    height: 50px;
+    margin: auto; 
+    line-height: 10px; 
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.formulario {
+    font-family: 'Roboto';
+    border-radius: 5px;
+    padding: 35px;
+    margin-top: 25px;
+  }
+
+label {
+    font-family: 'Roboto';
+    color: #414348;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    font-family: 'Roboto';
+    margin-top: 5px;
+    margin-bottom: 30px;
+    height: 30px;
+    width: 375px;
+    border-radius: 5px;
+    border: 2px solid #414348;
+    padding-left: 10px;
+}
+
+p {
+    margin-top: -5px;
+    font-size: small;
+    margin-bottom: -0.5px;
+}
+
+.boton {
+    color: #ffffff;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #777a84;
+    border: 2px solid #414348;
+    border-radius: 5px;
+    height: 40px;
+    width: 391px;
+    cursor: pointer;
+}
+
+
+.boton:hover {
+    background-color: #494c51;
+}
