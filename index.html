@@ -16,7 +16,7 @@ Si queremos respetar al 100% la estructura que seguimos en la
 práctica anterior, tenemos que poner los name en mayúsculas.-->
 
 <body>
-        <form method="POST" action="formulario.php">
+        <form method="POST" action="formulario2.php">
             <div class="formulario">
             <h1>Formulario de registro</h1>
 
@@ -36,7 +36,9 @@ práctica anterior, tenemos que poner los name en mayúsculas.-->
 
 </div>
 
-<script src="script.js"></script>
-    
+<?php if (!empty($error)) { ?>
+    <p><?php echo $error; ?></p>
+<?php } ?>
+
 </body>
 </html>
