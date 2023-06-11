@@ -1,0 +1,68 @@
+/* Seguirá la línea del css principal, pero lo creamos en parte
+para poder editar mejor el mensaje que sale. */
+
+@import url('https://fonts.google.com/specimen/Roboto');
+
+body {
+    font-family: 'Roboto';
+    background-color: #cec09f75;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #414348;
+  }
+
+.success-message {
+    color: #414348;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto';
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: auto; 
+    margin-top: 60px;
+}
+
+.info {
+    color: #414348;
+    text-align: center;
+    font-family: 'Roboto';
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* El hover nos acaba dando errores y optamos por un
+subrayado elegante. */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #414348;
+    font-size: 20px;
+    font-family: 'Roboto';
+    text-align: center;
+    text-decoration: none;
+    margin-top: -20px;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    left: 42%;
+    right: 42%;
+    bottom: 635px;
+    height: 2px;
+    background-color: #414348;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.button:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}

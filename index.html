@@ -8,15 +8,14 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<!-- Creamos un formulario como a los que estamos acostumbradas.
-La novedad ahora es que le indicamos el método por el que tiene
-que recoger los datos (POST, para que no se vea lo que mandamos)
-y la página hacia donde van. 
-Si queremos respetar al 100% la estructura que seguimos en la
-práctica anterior, tenemos que poner los name en mayúsculas.-->
+<!-- Creamos un formulario como a los que estamos acostumbradas. La novedad ahora
+es que le indicamos el método por el que tiene que recoger los datos (POST, para
+que no se vean los datos que mandamos) y la página hacia donde van. Si queremos
+respetar al 100% la estructura que seguimos en la práctica anterior, tenemos que
+poner los name en mayúsculas. -->
 
 <body>
-        <form method="POST" action="formulario2.php">
+        <form method="POST" action="formulario.php">
             <div class="formulario">
             <h1>Formulario de registro</h1>
 
@@ -36,9 +35,17 @@ práctica anterior, tenemos que poner los name en mayúsculas.-->
 
 </div>
 
+<!-- Hacemos validación de los datos con PHP. Aquí hacemos una pequeña llamada por
+si diese error. -->
+
 <?php if (!empty($error)) { ?>
     <p><?php echo $error; ?></p>
 <?php } ?>
+
+<!-- A continuación hacemos validación con JS, pese a que antes no lo conseguíamos
+porque nos daba errores. -->
+
+<script src="script.js"></script>
 
 </body>
 </html>
